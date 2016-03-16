@@ -55,6 +55,8 @@ class NoteTakerViewController: UIViewController, UITableViewDataSource, UITableV
     func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
         audioPlayer = getAudioPlayerFile("StartRecordSound", type: "m4a")
         audioPlayer.play()
+        
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
     }
 }
 
