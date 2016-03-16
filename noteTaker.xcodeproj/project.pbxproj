@@ -15,6 +15,7 @@
 		CCEA126D1C99CC8F00D61915 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCEA126B1C99CC8F00D61915 /* LaunchScreen.storyboard */; };
 		CCEA12781C99CC8F00D61915 /* noteTakerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCEA12771C99CC8F00D61915 /* noteTakerTests.swift */; };
 		CCEA12831C99CC8F00D61915 /* noteTakerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCEA12821C99CC8F00D61915 /* noteTakerUITests.swift */; };
+		CCEA12911C99D15900D61915 /* SampleAudio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CCEA12901C99D15900D61915 /* SampleAudio.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		CCEA127E1C99CC8F00D61915 /* noteTakerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = noteTakerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCEA12821C99CC8F00D61915 /* noteTakerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = noteTakerUITests.swift; sourceTree = "<group>"; };
 		CCEA12841C99CC8F00D61915 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCEA12901C99D15900D61915 /* SampleAudio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = SampleAudio.mp3; path = ../../../Downloads/SampleAudio.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				CCEA12631C99CC8F00D61915 /* Main.storyboard */,
 				CCEA12691C99CC8F00D61915 /* Assets.xcassets */,
 				CCEA126B1C99CC8F00D61915 /* LaunchScreen.storyboard */,
+				CCEA12901C99D15900D61915 /* SampleAudio.mp3 */,
 				CCEA126E1C99CC8F00D61915 /* Info.plist */,
 				CCEA12661C99CC8F00D61915 /* noteTaker.xcdatamodeld */,
 			);
@@ -232,6 +235,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCEA12911C99D15900D61915 /* SampleAudio.mp3 in Resources */,
 				CCEA126D1C99CC8F00D61915 /* LaunchScreen.storyboard in Resources */,
 				CCEA126A1C99CC8F00D61915 /* Assets.xcassets in Resources */,
 				CCEA12651C99CC8F00D61915 /* Main.storyboard in Resources */,
