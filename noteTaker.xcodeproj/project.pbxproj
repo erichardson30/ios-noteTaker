@@ -1,0 +1,522 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CCEA12601C99CC8F00D61915 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCEA125F1C99CC8F00D61915 /* AppDelegate.swift */; };
+		CCEA12621C99CC8F00D61915 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCEA12611C99CC8F00D61915 /* ViewController.swift */; };
+		CCEA12651C99CC8F00D61915 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCEA12631C99CC8F00D61915 /* Main.storyboard */; };
+		CCEA12681C99CC8F00D61915 /* noteTaker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CCEA12661C99CC8F00D61915 /* noteTaker.xcdatamodeld */; };
+		CCEA126A1C99CC8F00D61915 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCEA12691C99CC8F00D61915 /* Assets.xcassets */; };
+		CCEA126D1C99CC8F00D61915 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCEA126B1C99CC8F00D61915 /* LaunchScreen.storyboard */; };
+		CCEA12781C99CC8F00D61915 /* noteTakerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCEA12771C99CC8F00D61915 /* noteTakerTests.swift */; };
+		CCEA12831C99CC8F00D61915 /* noteTakerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCEA12821C99CC8F00D61915 /* noteTakerUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CCEA12741C99CC8F00D61915 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCEA12541C99CC8F00D61915 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCEA125B1C99CC8F00D61915;
+			remoteInfo = noteTaker;
+		};
+		CCEA127F1C99CC8F00D61915 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCEA12541C99CC8F00D61915 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCEA125B1C99CC8F00D61915;
+			remoteInfo = noteTaker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CCEA125C1C99CC8F00D61915 /* noteTaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = noteTaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCEA125F1C99CC8F00D61915 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CCEA12611C99CC8F00D61915 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CCEA12641C99CC8F00D61915 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CCEA12671C99CC8F00D61915 /* noteTaker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = noteTaker.xcdatamodel; sourceTree = "<group>"; };
+		CCEA12691C99CC8F00D61915 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CCEA126C1C99CC8F00D61915 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CCEA126E1C99CC8F00D61915 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCEA12731C99CC8F00D61915 /* noteTakerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = noteTakerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCEA12771C99CC8F00D61915 /* noteTakerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = noteTakerTests.swift; sourceTree = "<group>"; };
+		CCEA12791C99CC8F00D61915 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCEA127E1C99CC8F00D61915 /* noteTakerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = noteTakerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCEA12821C99CC8F00D61915 /* noteTakerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = noteTakerUITests.swift; sourceTree = "<group>"; };
+		CCEA12841C99CC8F00D61915 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CCEA12591C99CC8F00D61915 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCEA12701C99CC8F00D61915 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCEA127B1C99CC8F00D61915 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CCEA12531C99CC8F00D61915 = {
+			isa = PBXGroup;
+			children = (
+				CCEA125E1C99CC8F00D61915 /* noteTaker */,
+				CCEA12761C99CC8F00D61915 /* noteTakerTests */,
+				CCEA12811C99CC8F00D61915 /* noteTakerUITests */,
+				CCEA125D1C99CC8F00D61915 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CCEA125D1C99CC8F00D61915 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CCEA125C1C99CC8F00D61915 /* noteTaker.app */,
+				CCEA12731C99CC8F00D61915 /* noteTakerTests.xctest */,
+				CCEA127E1C99CC8F00D61915 /* noteTakerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CCEA125E1C99CC8F00D61915 /* noteTaker */ = {
+			isa = PBXGroup;
+			children = (
+				CCEA125F1C99CC8F00D61915 /* AppDelegate.swift */,
+				CCEA12611C99CC8F00D61915 /* ViewController.swift */,
+				CCEA12631C99CC8F00D61915 /* Main.storyboard */,
+				CCEA12691C99CC8F00D61915 /* Assets.xcassets */,
+				CCEA126B1C99CC8F00D61915 /* LaunchScreen.storyboard */,
+				CCEA126E1C99CC8F00D61915 /* Info.plist */,
+				CCEA12661C99CC8F00D61915 /* noteTaker.xcdatamodeld */,
+			);
+			path = noteTaker;
+			sourceTree = "<group>";
+		};
+		CCEA12761C99CC8F00D61915 /* noteTakerTests */ = {
+			isa = PBXGroup;
+			children = (
+				CCEA12771C99CC8F00D61915 /* noteTakerTests.swift */,
+				CCEA12791C99CC8F00D61915 /* Info.plist */,
+			);
+			path = noteTakerTests;
+			sourceTree = "<group>";
+		};
+		CCEA12811C99CC8F00D61915 /* noteTakerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CCEA12821C99CC8F00D61915 /* noteTakerUITests.swift */,
+				CCEA12841C99CC8F00D61915 /* Info.plist */,
+			);
+			path = noteTakerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CCEA125B1C99CC8F00D61915 /* noteTaker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCEA12871C99CC8F00D61915 /* Build configuration list for PBXNativeTarget "noteTaker" */;
+			buildPhases = (
+				CCEA12581C99CC8F00D61915 /* Sources */,
+				CCEA12591C99CC8F00D61915 /* Frameworks */,
+				CCEA125A1C99CC8F00D61915 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = noteTaker;
+			productName = noteTaker;
+			productReference = CCEA125C1C99CC8F00D61915 /* noteTaker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CCEA12721C99CC8F00D61915 /* noteTakerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCEA128A1C99CC8F00D61915 /* Build configuration list for PBXNativeTarget "noteTakerTests" */;
+			buildPhases = (
+				CCEA126F1C99CC8F00D61915 /* Sources */,
+				CCEA12701C99CC8F00D61915 /* Frameworks */,
+				CCEA12711C99CC8F00D61915 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CCEA12751C99CC8F00D61915 /* PBXTargetDependency */,
+			);
+			name = noteTakerTests;
+			productName = noteTakerTests;
+			productReference = CCEA12731C99CC8F00D61915 /* noteTakerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CCEA127D1C99CC8F00D61915 /* noteTakerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCEA128D1C99CC8F00D61915 /* Build configuration list for PBXNativeTarget "noteTakerUITests" */;
+			buildPhases = (
+				CCEA127A1C99CC8F00D61915 /* Sources */,
+				CCEA127B1C99CC8F00D61915 /* Frameworks */,
+				CCEA127C1C99CC8F00D61915 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CCEA12801C99CC8F00D61915 /* PBXTargetDependency */,
+			);
+			name = noteTakerUITests;
+			productName = noteTakerUITests;
+			productReference = CCEA127E1C99CC8F00D61915 /* noteTakerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CCEA12541C99CC8F00D61915 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Richardson, Eric";
+				TargetAttributes = {
+					CCEA125B1C99CC8F00D61915 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					CCEA12721C99CC8F00D61915 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = CCEA125B1C99CC8F00D61915;
+					};
+					CCEA127D1C99CC8F00D61915 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = CCEA125B1C99CC8F00D61915;
+					};
+				};
+			};
+			buildConfigurationList = CCEA12571C99CC8F00D61915 /* Build configuration list for PBXProject "noteTaker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CCEA12531C99CC8F00D61915;
+			productRefGroup = CCEA125D1C99CC8F00D61915 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CCEA125B1C99CC8F00D61915 /* noteTaker */,
+				CCEA12721C99CC8F00D61915 /* noteTakerTests */,
+				CCEA127D1C99CC8F00D61915 /* noteTakerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CCEA125A1C99CC8F00D61915 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCEA126D1C99CC8F00D61915 /* LaunchScreen.storyboard in Resources */,
+				CCEA126A1C99CC8F00D61915 /* Assets.xcassets in Resources */,
+				CCEA12651C99CC8F00D61915 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCEA12711C99CC8F00D61915 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCEA127C1C99CC8F00D61915 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CCEA12581C99CC8F00D61915 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCEA12621C99CC8F00D61915 /* ViewController.swift in Sources */,
+				CCEA12681C99CC8F00D61915 /* noteTaker.xcdatamodeld in Sources */,
+				CCEA12601C99CC8F00D61915 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCEA126F1C99CC8F00D61915 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCEA12781C99CC8F00D61915 /* noteTakerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCEA127A1C99CC8F00D61915 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCEA12831C99CC8F00D61915 /* noteTakerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CCEA12751C99CC8F00D61915 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CCEA125B1C99CC8F00D61915 /* noteTaker */;
+			targetProxy = CCEA12741C99CC8F00D61915 /* PBXContainerItemProxy */;
+		};
+		CCEA12801C99CC8F00D61915 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CCEA125B1C99CC8F00D61915 /* noteTaker */;
+			targetProxy = CCEA127F1C99CC8F00D61915 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CCEA12631C99CC8F00D61915 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CCEA12641C99CC8F00D61915 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CCEA126B1C99CC8F00D61915 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CCEA126C1C99CC8F00D61915 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CCEA12851C99CC8F00D61915 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CCEA12861C99CC8F00D61915 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CCEA12881C99CC8F00D61915 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = noteTaker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.erichardson.noteTaker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CCEA12891C99CC8F00D61915 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = noteTaker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.erichardson.noteTaker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CCEA128B1C99CC8F00D61915 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = noteTakerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.erichardson.noteTakerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/noteTaker.app/noteTaker";
+			};
+			name = Debug;
+		};
+		CCEA128C1C99CC8F00D61915 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = noteTakerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.erichardson.noteTakerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/noteTaker.app/noteTaker";
+			};
+			name = Release;
+		};
+		CCEA128E1C99CC8F00D61915 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = noteTakerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.erichardson.noteTakerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = noteTaker;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		CCEA128F1C99CC8F00D61915 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = noteTakerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.erichardson.noteTakerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = noteTaker;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CCEA12571C99CC8F00D61915 /* Build configuration list for PBXProject "noteTaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCEA12851C99CC8F00D61915 /* Debug */,
+				CCEA12861C99CC8F00D61915 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCEA12871C99CC8F00D61915 /* Build configuration list for PBXNativeTarget "noteTaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCEA12881C99CC8F00D61915 /* Debug */,
+				CCEA12891C99CC8F00D61915 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CCEA128A1C99CC8F00D61915 /* Build configuration list for PBXNativeTarget "noteTakerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCEA128B1C99CC8F00D61915 /* Debug */,
+				CCEA128C1C99CC8F00D61915 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CCEA128D1C99CC8F00D61915 /* Build configuration list for PBXNativeTarget "noteTakerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCEA128E1C99CC8F00D61915 /* Debug */,
+				CCEA128F1C99CC8F00D61915 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CCEA12661C99CC8F00D61915 /* noteTaker.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CCEA12671C99CC8F00D61915 /* noteTaker.xcdatamodel */,
+			);
+			currentVersion = CCEA12671C99CC8F00D61915 /* noteTaker.xcdatamodel */;
+			path = noteTaker.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CCEA12541C99CC8F00D61915 /* Project object */;
+}
