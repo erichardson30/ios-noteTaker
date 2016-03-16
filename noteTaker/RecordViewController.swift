@@ -8,6 +8,7 @@
 
 import UIKit
 import AVFoundation
+import CoreData
 
 class RecordViewController: UIViewController {
     
@@ -54,11 +55,34 @@ class RecordViewController: UIViewController {
     
     
     @IBAction func save(sender: AnyObject) {
+        let context = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
+        let note = NSEntityDescription.insertNewObjectForEntityForName("Note", inManagedObjectContext: context) as! Note
+        note.name = noteTextField.text!
+        note.url = audioURL
+        
+        do {
+            try context.save()
+        } catch let saveError as NSError {
+            print("Error saving : \(saveError.localizedDescription)")
+        }
+        
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     
     
     @IBAction func record(sender: AnyObject) {
+        if audioRecorder.recording {
+            audioRecorder.stop()
+        } else {
+            let session = AVAudioSession.sharedInstance()
+            do {
+                try session.setActive(true)
+                audioRecorder.record()
+            } catch let recordError as NSError {
+                print("Recording error: \(recordError.localizedDescription)")
+            }
+            
+        }
     }
     
 }

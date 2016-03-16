@@ -17,6 +17,7 @@
 		CCEA12831C99CC8F00D61915 /* noteTakerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCEA12821C99CC8F00D61915 /* noteTakerUITests.swift */; };
 		CCEA12911C99D15900D61915 /* SampleAudio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CCEA12901C99D15900D61915 /* SampleAudio.mp3 */; };
 		CCEA12931C99DE7100D61915 /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCEA12921C99DE7100D61915 /* RecordViewController.swift */; };
+		CCEA12971C99E3C800D61915 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCEA12951C99E3C800D61915 /* Note.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		CCEA12841C99CC8F00D61915 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CCEA12901C99D15900D61915 /* SampleAudio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = SampleAudio.mp3; path = ../../../Downloads/SampleAudio.mp3; sourceTree = "<group>"; };
 		CCEA12921C99DE7100D61915 /* RecordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
+		CCEA12951C99E3C800D61915 /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 		CCEA12531C99CC8F00D61915 = {
 			isa = PBXGroup;
 			children = (
+				CCEA12951C99E3C800D61915 /* Note.swift */,
 				CCEA125E1C99CC8F00D61915 /* noteTaker */,
 				CCEA12761C99CC8F00D61915 /* noteTakerTests */,
 				CCEA12811C99CC8F00D61915 /* noteTakerUITests */,
@@ -270,6 +273,7 @@
 				CCEA12681C99CC8F00D61915 /* noteTaker.xcdatamodeld in Sources */,
 				CCEA12601C99CC8F00D61915 /* AppDelegate.swift in Sources */,
 				CCEA12931C99DE7100D61915 /* RecordViewController.swift in Sources */,
+				CCEA12971C99E3C800D61915 /* Note.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
