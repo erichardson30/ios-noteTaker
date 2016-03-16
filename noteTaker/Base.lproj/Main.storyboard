@@ -18,9 +18,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="orx-gd-Kdk">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="396"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aU5-uY-bv1">
+                                <rect key="frame" x="236" y="467" width="97" height="30"/>
+                                <state key="normal" title="Add new Note"/>
+                                <connections>
+                                    <segue destination="xfc-lr-Tcp" kind="presentation" id="SXw-cg-kwu"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -32,6 +39,59 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="968" y="482"/>
+        </scene>
+        <!--Record View Controller-->
+        <scene sceneID="aay-wE-AaG">
+            <objects>
+                <viewController id="xfc-lr-Tcp" customClass="RecordViewController" customModule="noteTaker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="E1y-5B-4Og"/>
+                        <viewControllerLayoutGuide type="bottom" id="PdP-XS-dqK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pq5-AV-48S">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qMt-5I-Jvy">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="Title" id="8T5-nR-Z7P">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="NGg-g4-Mir">
+                                            <connections>
+                                                <action selector="cancel:" destination="xfc-lr-Tcp" id="yBS-n6-2g0"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="YxN-Nm-MYS">
+                                            <connections>
+                                                <action selector="save:" destination="xfc-lr-Tcp" id="P4y-GM-zYb"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hjS-EK-rtZ">
+                                <rect key="frame" x="276" y="243" width="49" height="30"/>
+                                <state key="normal" title="Record"/>
+                                <connections>
+                                    <action selector="record:" destination="xfc-lr-Tcp" eventType="touchUpInside" id="Gmy-w7-Es9"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3Aa-nN-AYZ">
+                                <rect key="frame" x="66" y="175" width="467" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="noteTextField" destination="3Aa-nN-AYZ" id="Apg-BH-qa4"/>
+                        <outlet property="recordOutlet" destination="hjS-EK-rtZ" id="ynv-AP-CU3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l1d-fz-cLH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="968" y="1179"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="y9o-oE-pOb">
