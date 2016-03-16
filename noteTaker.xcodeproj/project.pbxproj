@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CCEA12601C99CC8F00D61915 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCEA125F1C99CC8F00D61915 /* AppDelegate.swift */; };
-		CCEA12621C99CC8F00D61915 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCEA12611C99CC8F00D61915 /* ViewController.swift */; };
+		CCEA12621C99CC8F00D61915 /* NoteTakerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCEA12611C99CC8F00D61915 /* NoteTakerViewController.swift */; };
 		CCEA12651C99CC8F00D61915 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCEA12631C99CC8F00D61915 /* Main.storyboard */; };
 		CCEA12681C99CC8F00D61915 /* noteTaker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CCEA12661C99CC8F00D61915 /* noteTaker.xcdatamodeld */; };
 		CCEA126A1C99CC8F00D61915 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCEA12691C99CC8F00D61915 /* Assets.xcassets */; };
@@ -37,7 +37,7 @@
 /* Begin PBXFileReference section */
 		CCEA125C1C99CC8F00D61915 /* noteTaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = noteTaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCEA125F1C99CC8F00D61915 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CCEA12611C99CC8F00D61915 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CCEA12611C99CC8F00D61915 /* NoteTakerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteTakerViewController.swift; sourceTree = "<group>"; };
 		CCEA12641C99CC8F00D61915 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CCEA12671C99CC8F00D61915 /* noteTaker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = noteTaker.xcdatamodel; sourceTree = "<group>"; };
 		CCEA12691C99CC8F00D61915 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -100,7 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				CCEA125F1C99CC8F00D61915 /* AppDelegate.swift */,
-				CCEA12611C99CC8F00D61915 /* ViewController.swift */,
+				CCEA12611C99CC8F00D61915 /* NoteTakerViewController.swift */,
 				CCEA12631C99CC8F00D61915 /* Main.storyboard */,
 				CCEA12691C99CC8F00D61915 /* Assets.xcassets */,
 				CCEA126B1C99CC8F00D61915 /* LaunchScreen.storyboard */,
@@ -259,7 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CCEA12621C99CC8F00D61915 /* ViewController.swift in Sources */,
+				CCEA12621C99CC8F00D61915 /* NoteTakerViewController.swift in Sources */,
 				CCEA12681C99CC8F00D61915 /* noteTaker.xcdatamodeld in Sources */,
 				CCEA12601C99CC8F00D61915 /* AppDelegate.swift in Sources */,
 			);
