@@ -8,6 +8,7 @@
 
 import UIKit
 import AVFoundation
+import CoreData
 
 class NoteTakerViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
@@ -24,6 +25,16 @@ class NoteTakerViewController: UIViewController, UITableViewDataSource, UITableV
         tableView.delegate = self
         tableView.dataSource = self
     }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewWillAppear(true)
+        
+        let context = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
+        let request = NSFetchRequest(entityName: "Note")
+        self.notesArray = (try! context.executeFetchRequest(request)) as! [Note]
+        
+        self.tableView.reloadData()
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -36,7 +47,8 @@ class NoteTakerViewController: UIViewController, UITableViewDataSource, UITableV
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
-        cell.textLabel!.text = "The Notes"
+        let sound = notesArray[indexPath.row]
+        cell.textLabel!.text = sound.name
         return cell;
     }
     
@@ -55,8 +67,21 @@ class NoteTakerViewController: UIViewController, UITableViewDataSource, UITableV
     }
 
     func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
-        audioPlayer = getAudioPlayerFile("StartRecordSound", type: "m4a")
-        audioPlayer.play()
+//        audioPlayer = getAudioPlayerFile("StartRecordSound", type: "m4a")
+//        audioPlayer.play()
+        
+        let sound = notesArray[indexPath.row]
+        let baseString : String = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomainMask.UserDomainMask, true)[0] as String
+        let pathComponents = [baseString, sound.url!]
+        let audioNSURL = NSURL.fileURLWithPathComponents(pathComponents)!
+        let session = AVAudioSession.sharedInstance()
+        
+        do {
+            try session.setCategory(AVAudioSessionCategoryPlayback)
+            self.audioPlayer = try AVAudioPlayer(contentsOfURL: audioNSURL)
+        } catch let fetchError as NSError {
+            print("Fetch Error : \(fetchError.localizedDescription)")
+        }
         
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
     }
