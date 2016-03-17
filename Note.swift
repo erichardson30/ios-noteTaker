@@ -12,8 +12,8 @@ import CoreData
 
 class Note: NSManagedObject {
 
-    @NSManaged var name: String?
-    @NSManaged var url: String?
+    @NSManaged var name: String
+    @NSManaged var url: String
 
 
 }

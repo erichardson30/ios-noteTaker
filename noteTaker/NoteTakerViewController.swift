@@ -69,10 +69,9 @@ class NoteTakerViewController: UIViewController, UITableViewDataSource, UITableV
     func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
 //        audioPlayer = getAudioPlayerFile("StartRecordSound", type: "m4a")
 //        audioPlayer.play()
-        
         let sound = notesArray[indexPath.row]
         let baseString : String = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomainMask.UserDomainMask, true)[0] as String
-        let pathComponents = [baseString, sound.url!]
+        let pathComponents = [baseString, sound.url]
         let audioNSURL = NSURL.fileURLWithPathComponents(pathComponents)!
         let session = AVAudioSession.sharedInstance()
         
@@ -80,10 +79,32 @@ class NoteTakerViewController: UIViewController, UITableViewDataSource, UITableV
             try session.setCategory(AVAudioSessionCategoryPlayback)
             self.audioPlayer = try AVAudioPlayer(contentsOfURL: audioNSURL)
         } catch let fetchError as NSError {
-            print("Fetch Error : \(fetchError.localizedDescription)")
+            print("Fetch error: \(fetchError.localizedDescription)")
         }
         
+        self.audioPlayer.play()
+        
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
+    }
+    
+    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        switch editingStyle {
+        case .Delete:
+            let appDel:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+            let context:NSManagedObjectContext = appDel.managedObjectContext
+            context.deleteObject(notesArray[indexPath.row] as NSManagedObject)
+            notesArray.removeAtIndex(indexPath.row)
+            
+            do {
+                try context.save()
+            } catch let deleteError as NSError {
+                print("Delete error: \(deleteError.localizedDescription)")
+            }
+            
+            self.tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
+        default:
+            return
+        }
     }
 }
 
